@@ -1,0 +1,13 @@
+/home/rafael/Documents/cs50/final/bin/Debug/netcoreapp3.1/final
+/home/rafael/Documents/cs50/final/bin/Debug/netcoreapp3.1/final.deps.json
+/home/rafael/Documents/cs50/final/bin/Debug/netcoreapp3.1/final.runtimeconfig.json
+/home/rafael/Documents/cs50/final/bin/Debug/netcoreapp3.1/final.runtimeconfig.dev.json
+/home/rafael/Documents/cs50/final/bin/Debug/netcoreapp3.1/final.dll
+/home/rafael/Documents/cs50/final/bin/Debug/netcoreapp3.1/final.pdb
+/home/rafael/Documents/cs50/final/obj/Debug/netcoreapp3.1/final.csprojAssemblyReference.cache
+/home/rafael/Documents/cs50/final/obj/Debug/netcoreapp3.1/final.AssemblyInfoInputs.cache
+/home/rafael/Documents/cs50/final/obj/Debug/netcoreapp3.1/final.AssemblyInfo.cs
+/home/rafael/Documents/cs50/final/obj/Debug/netcoreapp3.1/final.csproj.CoreCompileInputs.cache
+/home/rafael/Documents/cs50/final/obj/Debug/netcoreapp3.1/final.dll
+/home/rafael/Documents/cs50/final/obj/Debug/netcoreapp3.1/final.pdb
+/home/rafael/Documents/cs50/final/obj/Debug/netcoreapp3.1/final.genruntimeconfig.cache
