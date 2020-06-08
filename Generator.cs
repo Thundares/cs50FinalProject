@@ -11,13 +11,29 @@ namespace MainSource
         {
             Console.WriteLine("\nLoading Characters...");
             List<Word> People = new List<Word>();
+
+            // read people.txt to list our possible characters
+            readFile("People.txt", People);
+
+            Console.WriteLine("\nComplete!");
+            Console.WriteLine("\nLoading Words");
+
+            List<Word> Dict = new List<Word>();
+            readFile("Words.txt", Dict);
+
+            Console.WriteLine("\nComplete!");
+
+        }
+
+        static void readFile(string path, List<Word> list)
+        {
             FileStream Characters = null;
             StreamReader Reader = null;
 
             try
             {
                 // finding and opening file
-                Characters = new FileStream("People.txt", FileMode.Open);
+                Characters = new FileStream(path, FileMode.Open);
                 Reader = new StreamReader(Characters);
 
                 // reading file
@@ -30,8 +46,8 @@ namespace MainSource
                 {
                     Word aux = new Word();
                     aux.Name = names[i]; 
-                    People.Add(aux);
-                    Console.WriteLine("Added: " + People[i].Name);
+                    list.Add(aux);
+                    /* -debug log- */Console.WriteLine("Added: " + list[i].Name);
                     i++;
                 }
             }
