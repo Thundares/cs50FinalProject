@@ -1,0 +1,7 @@
+Mario
+Luigi
+Peach
+Toad
+Bowser
+Yoshi
+Wario

@@ -1,8 +1,8 @@
 using System;
 
-namespace classes
+namespace Classes
 {
-    class Word
+    public class Word
     {
         public string Name { get; set; }
     }

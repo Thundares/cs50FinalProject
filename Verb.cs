@@ -1,8 +1,8 @@
 using System;
 
-namespace classes
+namespace Classes
 {
-    class Verb : Word
+    public class Verb : Word
     {
         //props
         public Word Subject { get; set; }
