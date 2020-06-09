@@ -5,12 +5,15 @@ namespace Classes
     public class Verb : Word
     {
         //props
-        public Word Subject { get; set; }
-        public Word Object { get; set; }
+        public string Subject { get; set; }
+        public string Object { get; set; }
         public string Complement { get; set; }
 
         //methods
-        Verb(Word sub, Word obj)
+        public Verb()
+        {
+        }
+        public Verb(string sub, string obj)
         {
             Subject = sub;
             Object = obj;

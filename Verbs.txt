@@ -1,0 +1,13 @@
+craft,object
+explore,place
+fight,living
+give,object,living
+go,place
+help,living,verb
+protect,object
+protect,living
+save,living
+steal,object
+stare at,object
+teach,living
+travel to,place
