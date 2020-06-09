@@ -1,11 +1,6 @@
 Apple
 Bee
 Cactus
-Dream
-Earth
-Funeral
-Genes
-Home
 Ice
 Javelin
 Kangaroo
@@ -15,7 +10,7 @@ Net
 Oven
 Paper
 Queen
-Rose
+Roses
 Sushi
 Taco
 Ukelele

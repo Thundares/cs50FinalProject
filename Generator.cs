@@ -16,14 +16,14 @@ namespace MainSource
             readFile("People.txt", People);
 
             Console.WriteLine("\nComplete!");
-            Console.WriteLine("\nLoading Words");
+            Console.WriteLine("\nLoading Words...");
 
             // read Words.txt to list our vocabulary
-            List<Word> Dict = new List<Word>();
-            readFile("Words.txt", Dict);
+            List<Word> Obj = new List<Word>();
+            readFile("Objects.txt", Obj);
 
             Console.WriteLine("\nComplete!");
-            Console.WriteLine("\nLoading Verbs");
+            Console.WriteLine("\nLoading Verbs...");
 
             // read Verbs.txt to list our actions
             List<Verb> Actions = new List<Verb>();

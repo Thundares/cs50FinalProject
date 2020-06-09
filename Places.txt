@@ -1,0 +1,36 @@
+Bar
+Beach
+Boat
+Capital City
+Castle
+Cave
+City
+Dark place
+Desert
+Dream
+Dungeon
+Earth
+Field
+Forest
+Funeral
+Hell
+Home
+Hotel
+Lake
+Island
+Neighbor's House
+Mountain
+Moon
+Ocean
+Paradise
+River
+Room
+Santa's House
+Sky
+Street
+Swamp
+Train
+Trainstation
+Tower
+Volcano
+White House
