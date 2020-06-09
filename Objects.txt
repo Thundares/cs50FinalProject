@@ -1,15 +1,12 @@
 Apple
-Bee
 Cactus
 Ice
 Javelin
-Kangaroo
 Lumber
 Make
 Net
 Oven
 Paper
-Queen
 Roses
 Sushi
 Taco
@@ -17,5 +14,28 @@ Ukelele
 Vinegar
 X-Ray
 Yo-yo
-Wolf
 Zipper
+Diamond
+Relic
+Elixir
+Remedy
+Treasure
+Sword
+Weapon
+Gun
+Rifle
+Shield
+Cape
+Magical Wand
+Computer
+Letter
+Cd
+Car
+Money
+Gold
+Tennis
+Scientific Paper
+Book
+Ancient Tome
+Secret Potion
+Password

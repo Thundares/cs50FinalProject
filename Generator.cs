@@ -18,9 +18,13 @@ namespace MainSource
             Console.WriteLine("\nComplete!");
             Console.WriteLine("\nLoading Words...");
 
-            // read Words.txt to list our vocabulary
+            // read Objects.txt to list our vocabulary
             List<Word> Obj = new List<Word>();
             readFile("Objects.txt", Obj);
+
+            // read Places.txt
+            List<Word> Places = new List<Word>();
+            readFile("Places.txt", Places);
 
             Console.WriteLine("\nComplete!");
             Console.WriteLine("\nLoading Verbs...");

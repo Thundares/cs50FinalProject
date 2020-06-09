@@ -5,3 +5,7 @@ Toad
 Bowser
 Yoshi
 Wario
+Queen
+Wolf
+Kangaroo
+Bee

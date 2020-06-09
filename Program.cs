@@ -8,8 +8,8 @@ namespace final
         static void Main(string[] args)
         {
             // Print Title
-            Console.WriteLine("\n                     Hero's Journey Generator\n");
-            Console.WriteLine("Be sure to have People.txt, Actions.txt and Words.txt in the same directory");
+            Console.WriteLine("\n                            Hero's Journey Generator\n");
+            Console.WriteLine("Be sure to have People.txt, Verbs.txt, Places.txt and Objects.txt in the same directory");
             Console.WriteLine("---------------------------------------------------------------------------");
 
             // Auxiliar variables
