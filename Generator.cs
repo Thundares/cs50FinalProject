@@ -34,6 +34,7 @@ namespace MainSource
             readVerb("Verbs.txt", Actions);
 
             Console.WriteLine("\nComplete");
+            Generate(People, Places, Obj, Actions);
         }
 
         static void readFile(string path, List<Word> list)
@@ -118,6 +119,25 @@ namespace MainSource
                 if (Characters != null) Characters.Close();
                 if (Reader != null) Reader.Close();
             }
+        }
+
+        // Generates the Hero's Journey
+        static void Generate(List<Word> People, List<Word> Places, List<Word> Obj, List<Verb> Actions)
+        {
+            // auxiliar variables
+            int LenPeop = People.Count - 1;
+            int LenPlac = Places.Count - 1;
+            int LenObj = Obj.Count - 1;
+            int LenAct = Actions.Count - 1;
+            var rand = new Random();
+
+            // Printing in Console
+            Console.WriteLine("\n\n\n\n\n\n\n                    The Journey Starts...\n\n\n\n\n\n\n\n");
+
+            // The Ordinary World
+            Word Hero = People[rand.Next(LenPeop)];
+            Word OrdinaryWorld = Places[rand.Next(LenPlac)];
+            Console.WriteLine("At the beginning there was " + Hero.Name + ". Who lived in " + OrdinaryWorld.Name + ".\n\n\n\n");
         }
     }
 }
