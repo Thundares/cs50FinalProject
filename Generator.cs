@@ -167,8 +167,13 @@ namespace MainSource
             Word Hero = People[rand.Next(LenPeop)];
             Word OrdinaryWorld = Places[rand.Next(LenPlac)];
             Console.WriteLine("At the beginning there was " + Article(Hero.Name, false) + Hero.Name + ". Who lived in " + Article(OrdinaryWorld.Name, true) + OrdinaryWorld.Name + ".\n\n\n\n");
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
 
             // Call to Adventure
+            Verb MainAction = Actions[rand.Next(LenAct)];
+            MainAction.RandAction(Article(Hero.Name, false) + Hero.Name, Obj, Places, People, Actions);
+            Console.WriteLine("\n\n\n" + MainAction.ToString());
 
             // Refuse of the Call
 
