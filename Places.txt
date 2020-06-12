@@ -1,36 +1,36 @@
-Bar
-Beach
-Boat
-Capital City
-Castle
-Cave
-City
-Dark place
-Desert
-Dream
-Dungeon
+bar
+beach
+boat
+capital City
+castle
+cave
+city
+dark place
+desert
+dream
+dungeon
 Earth
-Field
-Forest
-Funeral
+field
+forest
+funeral
 Hell
 Home
-Hotel
-Lake
-Island
+hotel
+lake
+island
 Neighbor's House
-Mountain
-Moon
-Ocean
+mountain
+moon
+ocean
 Paradise
-River
-Room
+river
+room
 Santa's House
 Sky
-Street
-Swamp
-Train
-Trainstation
-Tower
-Volcano
+street
+swamp
+train
+trainstation
+tower
+volcano
 White House

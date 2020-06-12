@@ -122,19 +122,31 @@ namespace MainSource
         }
 
         // Article generator
-        static string Article(string word)
+        static string Article(string word, bool the)
         {
+            // if it is a Name with Uppercase there will be no article
+            if(word[0] < 91)
+            {
+                if(the)
+                {
+                    return "the ";
+                }
+                else
+                    return "";
+            }
+
+            // else run the code
             char aux = word[0];
             char.ToUpper(aux);
 
             // check if Grammar is right
             if(aux == 'A' || aux == 'E' || aux == 'I' || aux == 'O' || aux == 'H')
             {
-                return "an";
+                return "an ";
             }
             else
             {
-                return "a";
+                return "a ";
             }
         }
 
@@ -154,7 +166,7 @@ namespace MainSource
             // The Ordinary World
             Word Hero = People[rand.Next(LenPeop)];
             Word OrdinaryWorld = Places[rand.Next(LenPlac)];
-            Console.WriteLine("At the beginning there was " + Hero.Name + ". Who lived in " + Article(OrdinaryWorld.Name) + OrdinaryWorld.Name + ".\n\n\n\n");
+            Console.WriteLine("At the beginning there was " + Article(Hero.Name, false) + Hero.Name + ". Who lived in " + Article(OrdinaryWorld.Name, true) + OrdinaryWorld.Name + ".\n\n\n\n");
 
             // Call to Adventure
 
