@@ -121,6 +121,23 @@ namespace MainSource
             }
         }
 
+        // Article generator
+        static string Article(string word)
+        {
+            char aux = word[0];
+            char.ToUpper(aux);
+
+            // check if Grammar is right
+            if(aux == 'A' || aux == 'E' || aux == 'I' || aux == 'O' || aux == 'H')
+            {
+                return "an";
+            }
+            else
+            {
+                return "a";
+            }
+        }
+
         // Generates the Hero's Journey
         static void Generate(List<Word> People, List<Word> Places, List<Word> Obj, List<Verb> Actions)
         {
@@ -137,7 +154,29 @@ namespace MainSource
             // The Ordinary World
             Word Hero = People[rand.Next(LenPeop)];
             Word OrdinaryWorld = Places[rand.Next(LenPlac)];
-            Console.WriteLine("At the beginning there was " + Hero.Name + ". Who lived in " + OrdinaryWorld.Name + ".\n\n\n\n");
+            Console.WriteLine("At the beginning there was " + Hero.Name + ". Who lived in " + Article(OrdinaryWorld.Name) + OrdinaryWorld.Name + ".\n\n\n\n");
+
+            // Call to Adventure
+
+            // Refuse of the Call
+
+            // Meeting with Mentor
+
+            // Crossing the first threshold
+
+            // Test, Allies and enemies
+
+            // Approach to the inmost cave
+
+            // The Ordeal
+
+            // Reward
+
+            // The road back
+
+            // The ressurrection
+
+            // Return with the Elixir 
         }
     }
 }
