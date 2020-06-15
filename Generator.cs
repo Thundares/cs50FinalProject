@@ -173,11 +173,18 @@ namespace MainSource
             // Call to Adventure
             Verb MainAction = Actions[rand.Next(LenAct)];
             MainAction.RandAction(Article(Hero.Name, false) + Hero.Name, Obj, Places, People, Actions);
-            Console.WriteLine("\n\n\n" + MainAction.ToString());
+            Console.WriteLine("\n\n\n" + MainAction.ToString() + "\n\n\n\n");
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
 
             // Refuse of the Call
+            Word TempWord = People[rand.Next(LenPeop)];
+            Console.WriteLine("\n\n\nBut was reluctant to accept the task because of " + Article(TempWord.Name,false) + TempWord.Name + ".\n\n\n\n");
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
 
             // Meeting with Mentor
+            Word Mentor = People[rand.Next(LenPeop)];
 
             // Crossing the first threshold
 
