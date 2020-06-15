@@ -193,8 +193,15 @@ namespace MainSource
             Console.WriteLine("\n\n\n" + Hero.Name + " could only decide to go after "
             + Mentor.Name + " appeared.\n" + TempVerb.ToString() + ".\nAnd that was what motivated "
             + Hero.Name + " to accept the quest.\n\n\n\n");
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
 
             // Crossing the first threshold
+            TempWord = Places[rand.Next(LenPlac)];
+            Console.WriteLine("\n\n\nWhen they reached " + TempWord.Name + " " + Hero.Name
+            + " could not believe how the world could be so different.\n\n\n\n");
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
 
             // Test, Allies and enemies
 
