@@ -166,7 +166,9 @@ namespace MainSource
             // The Ordinary World
             Word Hero = People[rand.Next(LenPeop)];
             Word OrdinaryWorld = Places[rand.Next(LenPlac)];
-            Console.WriteLine("At the beginning there was " + Article(Hero.Name, false) + Hero.Name + ". Who lived in " + Article(OrdinaryWorld.Name, true) + OrdinaryWorld.Name + ".\n\n\n\n");
+            Console.WriteLine("At the beginning there was " + Article(Hero.Name, false) 
+            + Hero.Name + ". Who lived in " + Article(OrdinaryWorld.Name, true) 
+            + OrdinaryWorld.Name + ".\n\n\n\n");
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
 
@@ -179,12 +181,18 @@ namespace MainSource
 
             // Refuse of the Call
             Word TempWord = People[rand.Next(LenPeop)];
-            Console.WriteLine("\n\n\nBut was reluctant to accept the task because of " + Article(TempWord.Name,false) + TempWord.Name + ".\n\n\n\n");
+            Console.WriteLine("\n\n\nBut was reluctant to accept the task because of " 
+            + Article(TempWord.Name,false) + TempWord.Name + ".\n\n\n\n");
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
 
             // Meeting with Mentor
             Word Mentor = People[rand.Next(LenPeop)];
+            Verb TempVerb = Actions[rand.Next(LenAct)];
+            TempVerb.RandAction(Article(Mentor.Name, true) + Mentor.Name, Obj, Places, People, Actions);
+            Console.WriteLine("\n\n\n" + Hero.Name + " could only decide to go after "
+            + Mentor.Name + " appeared.\n" + TempVerb.ToString() + ".\nAnd that was what motivated "
+            + Hero.Name + " to accept the quest.\n\n\n\n");
 
             // Crossing the first threshold
 
