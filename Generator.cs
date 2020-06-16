@@ -188,11 +188,8 @@ namespace MainSource
 
             // Meeting with Mentor
             Word Mentor = People[rand.Next(LenPeop)];
-            Verb TempVerb = Actions[rand.Next(LenAct)];
-            TempVerb.RandAction(Article(Mentor.Name, true) + Mentor.Name, Obj, Places, People, Actions);
-            Console.WriteLine("\n\n\n" + Hero.Name + " could only decide to go after "
-            + Mentor.Name + " appeared.\n" + TempVerb.ToString() + ".\nAnd that was what motivated "
-            + Hero.Name + " to accept the quest.\n\n\n\n");
+            Console.WriteLine("\n\n\n" + Hero.Name + " could only decide after "
+            + Article(Mentor.Name, false) + Mentor.Name + " appeared as a Mentor.\n\n\n\n");
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
 
@@ -204,6 +201,15 @@ namespace MainSource
             Console.ReadKey();
 
             // Test, Allies and enemies
+            Word Enemy = People[rand.Next(LenPeop)];
+            Word Ally = People[rand.Next(LenPeop)];
+            Verb Test = Actions[rand.Next(LenAct)];
+            Test.RandAction(Hero.Name + " needed ", Obj, Places, People, Actions);
+            Console.WriteLine("\n\n\nOn the new world " + Test.ToString() 
+            + ".\nAs a friend there was " + Article(Ally.Name, false) + Ally.Name
+            + ".\nAnd as a enemy there was " + Article(Enemy.Name, false) + Enemy.Name + ".\n\n\n\n");
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
 
             // Approach to the inmost cave
 
