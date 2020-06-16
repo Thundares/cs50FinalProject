@@ -212,8 +212,19 @@ namespace MainSource
             Console.ReadKey();
 
             // Approach to the inmost cave
+            Console.WriteLine("\n\n\nAfter succed the side quest " + Hero.Name + " stoped just before" 
+            + " facing the main quest.\nThe preparations were made and the reluctance appeared"
+            + " only to be fought and vanish once and for all.\n\n\n\n");
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
 
             // The Ordeal
+            Verb Ordeal = Actions[rand.Next(LenAct)];
+            Ordeal.RandAction(Hero.Name, Obj, Places, People, Actions);
+            Console.WriteLine("\n\n\nIn order to complete the main quest " + Ordeal.ToString()
+            + "\nAnd that complete changed " + Hero.Name + ".\n\n\n\n");
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
 
             // Reward
 
