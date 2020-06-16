@@ -97,7 +97,7 @@ namespace Classes
 
         public override string ToString()
         {
-            return Subject + " need to " + Name + " " + Object + Complement;
+            return Subject + " needed to " + Name + " " + Object + Complement;
         }
     }
 }

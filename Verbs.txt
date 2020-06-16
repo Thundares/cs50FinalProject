@@ -2,7 +2,7 @@ craft,object
 explore,place
 fight,living
 give,object,living
-go,place
+go to,place
 help,living,verb
 protect,object
 protect,living

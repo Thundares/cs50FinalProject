@@ -257,7 +257,7 @@ namespace MainSource
             }
             else
             {
-                Console.WriteLine("After the completing the main quest the world was totally"
+                Console.WriteLine("After completing the main quest the world was totally"
                 + " destoyed. There was nowhere to go back to.\n\n\n\n");
             }
             
@@ -276,7 +276,35 @@ namespace MainSource
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
 
-            // Return with the Elixir 
+            // Return with the Elixir
+            Bifurcation = rand.Next(5);
+            if (Bifurcation == 1)
+            {
+                Console.WriteLine("\n\n\n" + Hero.Name + " wins the fight and kills " + Enemy.Name
+                + ".\nNow, " + Hero.Name + " could finally be at peace.");
+            }
+            else if (Bifurcation == 2)
+            {
+                Console.WriteLine("\n\n\n" + Hero.Name + " wins the fight and, at the end, becomes friend with " + Enemy.Name
+                + ".\nNow, " + Hero.Name + " could finally be at peace.");
+            }
+            else if (Bifurcation == 3)
+            {
+                Console.WriteLine("\n\n\n" + Hero.Name + " wins the fight but is very injuried.\n"
+                + Hero.Name + " now recovers while observe the changes that the adventure made "
+                + "into the world.");
+            }
+            else if (Bifurcation == 4)
+            {
+                Console.WriteLine("\n\n\n" + "Both " + Hero.Name + " and " + Enemy.Name
+                + " end up dying in the battle.");
+            }
+            else if (Bifurcation == 5)
+            {
+                Console.WriteLine("\n\n\n" + Hero.Name + " loses the fight to " + Enemy.Name
+                + "but the main quest was already completed, so " + Enemy.Name + " lived only"
+                + " to see the changes in the world while could do nothing.");
+            }
         }
     }
 }
