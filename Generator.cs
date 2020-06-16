@@ -204,7 +204,11 @@ namespace MainSource
             Word Enemy = People[rand.Next(LenPeop)];
             Word Ally = People[rand.Next(LenPeop)];
             Verb Test = Actions[rand.Next(LenAct)];
-            Test.RandAction(Hero.Name + " needed ", Obj, Places, People, Actions);
+            while(Test.Object != "object")    // while this is not a new action
+            {
+                Test = Actions[rand.Next(LenAct)];    // rand a new action
+            }
+            Test.RandAction(Hero.Name, Obj, Places, People, Actions);
             Console.WriteLine("\n\n\nOn the new world " + Test.ToString() 
             + ".\nAs a friend there was " + Article(Ally.Name, false) + Ally.Name
             + ".\nAnd as a enemy there was " + Article(Enemy.Name, false) + Enemy.Name + ".\n\n\n\n");
@@ -220,6 +224,10 @@ namespace MainSource
 
             // The Ordeal
             Verb Ordeal = Actions[rand.Next(LenAct)];
+            while(Ordeal.Object != "object")    // while this is not a new action
+            {
+                Ordeal = Actions[rand.Next(LenAct)];    // rand a new action
+            }
             Ordeal.RandAction(Hero.Name, Obj, Places, People, Actions);
             Console.WriteLine("\n\n\nIn order to complete the main quest " + Ordeal.ToString()
             + "\nAnd that complete changed " + Hero.Name + ".\n\n\n\n");
@@ -227,6 +235,11 @@ namespace MainSource
             Console.ReadKey();
 
             // Reward
+            TempWord = Obj[rand.Next(LenObj)];
+            Console.WriteLine("\n\n\nAfter completing the main quest " + Hero.Name
+            + " got " + Article(TempWord.Name, true) + TempWord.Name + " as a reward.\n\n\n\n");
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
 
             // The road back
 
