@@ -265,6 +265,16 @@ namespace MainSource
             Console.ReadKey();
 
             // The ressurrection
+            Verb Last = Actions[rand.Next(LenAct)];
+            while(Last.Object != "object")    // while this is not a new action
+            {
+                Last = Actions[rand.Next(LenAct)];    // rand a new action
+            }
+            Last.RandAction(Enemy.Name, Obj, Places, People, Actions);
+            Console.WriteLine("\n\n\n" + Enemy.Name + " reappeared as the Enemy by surprise.\n"
+            + Last.ToString() + "\nSo " + Hero.Name + " had to fight " + Enemy.Name + " one last time.\n\n\n\n");
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
 
             // Return with the Elixir 
         }
