@@ -159,6 +159,7 @@ namespace MainSource
             int LenObj = Obj.Count - 1;
             int LenAct = Actions.Count - 1;
             var rand = new Random();
+            int Bifurcation = 0;
 
             // Printing in Console
             Console.WriteLine("\n\n\n\n\n\n\n                    The Journey Starts...\n\n\n\n\n\n\n\n");
@@ -242,6 +243,26 @@ namespace MainSource
             Console.ReadKey();
 
             // The road back
+            Bifurcation = rand.Next(3);
+            Console.WriteLine("\n\n\n");
+            if (Bifurcation == 0)
+            {
+                Console.WriteLine("The road back was very calm and " + Hero.Name 
+                + " could meet some friends from the journey.\n\n\n\n");
+            }
+            else if (Bifurcation == 1)
+            {
+                Console.WriteLine("There was only a brief moment to rest." 
+                + "The party could not even leave the place before...\n\n\n\n");
+            }
+            else
+            {
+                Console.WriteLine("After the completing the main quest the world was totally"
+                + " destoyed. There was nowhere to go back to.\n\n\n\n");
+            }
+            
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
 
             // The ressurrection
 
