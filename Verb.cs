@@ -36,7 +36,8 @@ namespace Classes
             if(Object == "object")
             {
                 // choose an object from obj list
-                Object = Obj[rand.Next(LenObj)].Name;
+                string TempObj = Obj[rand.Next(LenObj)].Name;
+                Object = Article(TempObj, false) + TempObj;
             }
             else if(Object == "place")
             {
@@ -76,7 +77,7 @@ namespace Classes
             else if(Complement == "living")
             {
                 // choose an complement from someone list
-                Complement = " " + Someone[rand.Next(LenSome)].Name;
+                Complement = " to " + Someone[rand.Next(LenSome)].Name;
             }
             else if(Complement == "verb")
             {
@@ -84,7 +85,7 @@ namespace Classes
                 Verb OtherVerb = new Verb();
                 OtherVerb = Act[rand.Next(LenAct)];
                 OtherVerb.RandAction("", Obj, Place, Someone, Act);
-                Complement = OtherVerb.ToString();
+                Complement = " who " + OtherVerb.ToString();
             }
             else 
             {
@@ -97,7 +98,36 @@ namespace Classes
 
         public override string ToString()
         {
+
             return Subject + " needed to " + Name + " " + Object + Complement;
+        }
+
+        static string Article(string word, bool the)
+        {
+            // if it is a Name with Uppercase there will be no article
+            if(word[0] < 91)
+            {
+                if(the)
+                {
+                    return "the ";
+                }
+                else
+                    return "";
+            }
+
+            // else run the code
+            char aux = word[0];
+            aux = char.ToUpper(aux);
+
+            // check if Grammar is right
+            if(aux == 'A' || aux == 'E' || aux == 'I' || aux == 'O' || aux == 'H')
+            {
+                return "an ";
+            }
+            else
+            {
+                return "a ";
+            }
         }
     }
 }
