@@ -1,41 +1,43 @@
-Apple
-Cactus
-Ice
-Javelin
-Lumber
-Make
-Net
-Oven
-Paper
-Roses
-Sushi
-Taco
-Ukelele
-Vinegar
+apple
+cactus
+ice
+javelin
+lumber
+mummy
+net
+oven
+paper
+roses
+sushi
+taco
+ukelele
+vinegar
 X-Ray
 Yo-yo
-Zipper
-Diamond
-Relic
-Elixir
-Remedy
-Treasure
-Sword
-Weapon
-Gun
-Rifle
-Shield
-Cape
-Magical Wand
-Computer
-Letter
-Cd
-Car
-Money
-Gold
-Tennis
-Scientific Paper
-Book
-Ancient Tome
-Secret Potion
-Password
+zipper
+diamond
+relic
+elixir
+remedy
+treasure
+sword
+weapon
+gun
+rifle
+shield
+cape
+magical Wand
+computer
+letter
+cd
+car
+money
+gold
+tennis
+scientific paper
+book
+ancient Tome
+secret Potion
+password
+star
+mushroom

@@ -5,7 +5,24 @@ Toad
 Bowser
 Yoshi
 Wario
-Queen
-wolf
-kangaroo
-bee
+Donkey Kong
+Banjo
+Kazooie
+Frodo
+Harry Potter
+Link
+Zelda
+Snake
+David
+Emma
+Brian
+Gandalf
+Lich King
+Pac Man
+Misterious Person
+Rick
+Morty
+Dexter
+Batman
+Nobody
+Everybody

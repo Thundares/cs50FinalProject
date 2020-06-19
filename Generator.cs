@@ -167,38 +167,34 @@ namespace MainSource
             // The Ordinary World
             Word Hero = People[rand.Next(LenPeop)];
             Word OrdinaryWorld = Places[rand.Next(LenPlac)];
+            Console.WriteLine("Press any key to advance to the next step.\n\n\n");
             Console.WriteLine("At the beginning there was " + Article(Hero.Name, false) 
             + Hero.Name + ". Who lived in " + Article(OrdinaryWorld.Name, true) 
             + OrdinaryWorld.Name + ".\n\n\n\n");
-            Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
 
             // Call to Adventure
             Verb MainAction = Actions[rand.Next(LenAct)];
             MainAction.RandAction(Article(Hero.Name, false) + Hero.Name, Obj, Places, People, Actions);
             Console.WriteLine("\n\n\n" + MainAction.ToString() + "\n\n\n\n");
-            Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
 
             // Refuse of the Call
             Word TempWord = People[rand.Next(LenPeop)];
             Console.WriteLine("\n\n\nBut was reluctant to accept the task because of " 
             + Article(TempWord.Name,false) + TempWord.Name + ".\n\n\n\n");
-            Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
 
             // Meeting with Mentor
             Word Mentor = People[rand.Next(LenPeop)];
             Console.WriteLine("\n\n\n" + Hero.Name + " could only decide after "
             + Article(Mentor.Name, false) + Mentor.Name + " appeared as a Mentor.\n\n\n\n");
-            Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
 
             // Crossing the first threshold
             TempWord = Places[rand.Next(LenPlac)];
             Console.WriteLine("\n\n\nWhen they reached " + TempWord.Name + " " + Hero.Name
             + " could not believe how the world could be so different.\n\n\n\n");
-            Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
 
             // Test, Allies and enemies
@@ -213,14 +209,21 @@ namespace MainSource
             Console.WriteLine("\n\n\nOn the new world " + Test.ToString() 
             + ".\nAs a friend there was " + Article(Ally.Name, false) + Ally.Name
             + ".\nAnd as a enemy there was " + Article(Enemy.Name, false) + Enemy.Name + ".\n\n\n\n");
-            Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
 
             // Approach to the inmost cave
-            Console.WriteLine("\n\n\nAfter succed the side quest " + Hero.Name + " stoped just before" 
-            + " facing the main quest.\nThe preparations were made and the reluctance appeared"
-            + " only to be fought and vanish once and for all.\n\n\n\n");
-            Console.WriteLine("Press any key to continue...");
+            Bifurcation = rand.Next(2);
+            if (Bifurcation == 0)
+            {
+                Console.WriteLine("\n\n\nAfter succed the side quest " + Hero.Name + " stopped just before" 
+                + " facing the main quest.\nThe preparations were made and the reluctance appeared"
+                + " only to be fought and vanish once and for all.\n\n\n\n");
+            }
+            else if (Bifurcation == 1)
+            {
+                Console.WriteLine("\n\n\nAfter failing the side quest " + Hero.Name + " needed a rest to restore" 
+                + " the confidence before facing the real challenge.\n\n\n\n");
+            }
             Console.ReadKey();
 
             // The Ordeal
@@ -232,14 +235,12 @@ namespace MainSource
             Ordeal.RandAction(Hero.Name, Obj, Places, People, Actions);
             Console.WriteLine("\n\n\nIn order to complete the main quest " + Ordeal.ToString()
             + "\nAnd that complete changed " + Hero.Name + ".\n\n\n\n");
-            Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
 
             // Reward
             TempWord = Obj[rand.Next(LenObj)];
             Console.WriteLine("\n\n\nAfter completing the main quest " + Hero.Name
             + " got " + Article(TempWord.Name, true) + TempWord.Name + " as a reward.\n\n\n\n");
-            Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
 
             // The road back
@@ -253,15 +254,13 @@ namespace MainSource
             else if (Bifurcation == 1)
             {
                 Console.WriteLine("There was only a brief moment to rest." 
-                + "The party could not even leave the place before...\n\n\n\n");
+                + " The party could not even leave the place before...\n\n\n\n");
             }
             else
             {
                 Console.WriteLine("After completing the main quest the world was totally"
                 + " destoyed. There was nowhere to go back to.\n\n\n\n");
             }
-            
-            Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
 
             // The ressurrection
@@ -273,7 +272,6 @@ namespace MainSource
             Last.RandAction(Enemy.Name, Obj, Places, People, Actions);
             Console.WriteLine("\n\n\n" + Enemy.Name + " reappeared as the Enemy by surprise.\n"
             + Last.ToString() + "\nSo " + Hero.Name + " had to fight " + Enemy.Name + " one last time.\n\n\n\n");
-            Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
 
             // Return with the Elixir
