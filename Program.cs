@@ -41,8 +41,7 @@ namespace final
                 else if(keyInput == ConsoleKey.S)
                 {
                     Console.WriteLine("\nOur repository on Github is: https://github.com/Thundares/cs50FinalProject");
-                    Console.WriteLine("Feel free to fork us.");
-                    running = false;
+                    Console.WriteLine("Feel free to fork us.\n");
                 }
 
                 // Just quit
@@ -52,7 +51,6 @@ namespace final
                 }
             }
             // Exit. Running == false
-            Console.WriteLine("\nExit");
         }
     }
 }

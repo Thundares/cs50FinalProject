@@ -59,7 +59,7 @@ namespace MainSource
                     Word aux = new Word();
                     aux.Name = names[i]; 
                     list.Add(aux);
-                    /* -debug log- */Console.WriteLine("Added: " + list[i].Name);
+                    // -debug log- Console.WriteLine("Added: " + list[i].Name);
                     i++;
                 }
             }
@@ -106,7 +106,7 @@ namespace MainSource
                     }
 
                     list.Add(aux);
-                    /* -debug log- */Console.WriteLine("Added: " + list[i].Name);
+                    // -debug log- Console.WriteLine("Added: " + list[i].Name);
                     i++;
                 }
             }
@@ -303,6 +303,7 @@ namespace MainSource
                 + ", but the main quest was already completed, so " + Enemy.Name + " lived only"
                 + " to see the changes in the world while could do nothing.");
             }
+            Console.WriteLine("\n\n\nThe End");
         }
     }
 }
