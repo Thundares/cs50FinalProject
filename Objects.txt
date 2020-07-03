@@ -26,7 +26,7 @@ gun
 rifle
 shield
 cape
-magical Wand
+magical wand
 computer
 letter
 cd
