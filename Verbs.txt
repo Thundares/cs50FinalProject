@@ -1,3 +1,11 @@
+# To insert a verb just create a new line and add as following:
+#   "verb,argument1,argument2"
+# argument2 is optional
+# As argument you use "object", "living", "place" or "verb"
+#
+# to create a commentary just use '#' to star the line
+# Do not leave blanck lines
+# Verbs
 craft,object
 explore,place
 fight,living
@@ -11,3 +19,4 @@ steal,object
 stare at,object
 teach,living
 travel to,place
+# Do not leave blanck lines

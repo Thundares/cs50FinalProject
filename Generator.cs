@@ -56,6 +56,12 @@ namespace MainSource
                 int i = 0;
                 foreach (string item in names)
                 {
+                    // if the line is a commentary
+                    if(names[i][0] == '#')
+                    {
+                        i++;
+                        continue;
+                    }
                     Word aux = new Word();
                     aux.Name = names[i]; 
                     list.Add(aux);
@@ -93,6 +99,13 @@ namespace MainSource
                 int i = 0;
                 foreach (string item in names)
                 {
+                    // if the line is a commentary
+                    if(names[i][0] == '#')
+                    {
+                        i++;
+                        continue;
+                    }
+
                     Verb aux = new Verb();
 
                     //split comas

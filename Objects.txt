@@ -1,3 +1,7 @@
+# To insert a name just create a new line woth the word in it
+# to create a commentary just use '#' to star the line
+# Do not leave blanck lines
+# Names
 apple
 cactus
 ice
@@ -26,7 +30,7 @@ gun
 rifle
 shield
 cape
-magical Wand
+magical wand
 computer
 letter
 cd
